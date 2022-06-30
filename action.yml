@@ -1,0 +1,12 @@
+name: 'actions'
+description: 'generic actions'
+inputs:
+  mode:
+    description: 'flags'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'docker://mborejdo/action-e2e'
+  args:
+    - ${{ inputs.flags }}
