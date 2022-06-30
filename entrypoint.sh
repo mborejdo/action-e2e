@@ -1,3 +1,5 @@
-#!/bin/sh -l
+#!/bin/bash -l
+
+set -x 
 
 exec "$@"
