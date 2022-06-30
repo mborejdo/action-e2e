@@ -5,5 +5,6 @@ WORKDIR /app
 
 RUN npm install @playwright/test
 RUN npx playwright install
+COPY entrypoint.sh /entrypoint.sh
 
-CMD ["npm", "run", "test"]
+ENTRYPOINT ["/entrypoint.sh"]
