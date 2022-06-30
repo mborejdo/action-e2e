@@ -1,7 +1,7 @@
 name: 'actions'
 description: 'generic actions'
 inputs:
-  mode:
+  flags:
     description: 'flags'
     required: false
     default: ''
