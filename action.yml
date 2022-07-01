@@ -7,6 +7,6 @@ inputs:
     default: ''
 runs:
   using: 'docker'
-  image: 'docker://mborejdo/action-e2e'
+  image: 'docker://mborejdo/e2e'
   args:
     - ${{ inputs.flags }}
